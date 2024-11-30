@@ -1,0 +1,62 @@
+.Main_form{
+   
+  
+   text-align: center; 
+   width: 300px;
+   margin: 0 auto;
+   margin-top: 50px;
+   padding: 20px;
+   
+   background-color: #f7f7f7;
+   box-shadow: 0 0 8px 3px #969696;
+   /* background-color: #f7f7f7; */
+   font-size: 15px;
+   /* border-radius: 10px; */
+   /* box-shadow: 20px red */
+}
+.card{
+   margin: 0 auto;
+   padding: 20px;
+   
+   background-color: #f7f7f7;
+   box-shadow: 0 0 8px 3px #969696;
+   /* background-color: #f7f7f7; */
+   font-size: 15px;
+   border-radius: 20px;
+   /* border-radius: 10px; */
+   /* box-shadow: 20px red */
+}
+.registration_form{
+   
+  
+   text-align: center; 
+   /* width: 100%; */
+   margin: 0 auto;
+   padding: 20px;
+   
+   background-color: #f7f7f7;
+   box-shadow: 0 0 8px 3px #969696;
+   /* background-color: #f7f7f7; */
+   font-size: 15px;
+   /* border-radius: 10px; */
+   /* box-shadow: 20px red */
+}
+
+
+.form_btn{
+   /* border-radius: 15px; */
+   width: 100%;
+   cursor: pointer;
+   background: green;
+   color: white;
+   font-size: 15px;
+   font-weight:bold
+}
+
+/* .forgot_btn{
+   border-radius: 15px;
+   font-size: 15px;
+   font-weight:bold;
+   cursor: pointer;
+   background: yellowgreen;
+} */
