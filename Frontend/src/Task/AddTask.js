@@ -6,7 +6,7 @@ import { task_val } from "./TaskVal";
 import { useState } from "react";
 import axios from "axios";
 import { DOMAIN } from "../UserComponent/config";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { json } from "react-router-dom";
 
 
@@ -39,7 +39,7 @@ return {...request}
                     Authorization: `Bearer ${token}`
                 }
               });
-            const { data } = result;
+            // const { data } = result;
             
             
             alert("task add successfully")

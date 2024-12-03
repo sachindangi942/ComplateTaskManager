@@ -5,7 +5,7 @@ import { DOMAIN } from "../UserComponent/config";
 const UserTask = () => {
     const [request] = useState({});
     const [response, setResponse] = useState([]);
-    const [user, setUser] = useState([])
+    // const [user, setUser] = useState([])
     const token = JSON.parse(localStorage.getItem("token"));
 
 
@@ -31,7 +31,7 @@ const UserTask = () => {
     const status = async (task_id, status) => {
 
         try {
-            const result = await axios.post(
+              await axios.post(
                 `${DOMAIN}task/status`,
                 { task_id, status },
                 {
@@ -91,7 +91,7 @@ const UserTask = () => {
                             <td>
                                 <select
                                     onChange={(e) => {
-                                        const value = e.target.value;
+                                        // const value = e.target.value;
                                         status(task._id, e.target.value)
                                     }}
                                 >

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { DOMAIN } from "../UserComponent/config";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 const ViewTask = () => {
@@ -188,7 +188,7 @@ const ViewTask = () => {
 
 
                                     onChange={(e) => {
-                                        const value = e.target.value;
+                                        // const value = e.target.value;
                                         Change_priority(task._id , e.target.value)
                                         // console.log("Priority updated:", value);
                                     }}

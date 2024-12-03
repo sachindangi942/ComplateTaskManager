@@ -1,15 +1,15 @@
 
 
 
-import { useState } from "react";
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+// import { useState } from "react";
+import { Nav, Navbar } from "react-bootstrap";
 import "./style.css"; // Ensure the path is correct
 import { useSelector } from "react-redux";
 
 const Header = () => {
 
   const {Role} = useSelector((state)=>state.A_login)
-  const [register, setRegister] = useState("Registration");
+  // const [register, setRegister] = useState("Registration");
   return (
     <div className="bg-light w-100">
       <Navbar expand="md" variant="light" className="container-fluid p-3">

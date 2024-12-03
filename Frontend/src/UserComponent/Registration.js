@@ -5,7 +5,7 @@ import { useState } from "react";
 import FieldInput from "./FieldInput";
 import { user_val } from "./Validation/FormValidation";    //joi validation file imaport
 import Axios from "axios";                                 // axios for connection node
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import st from "./style.module.css"
 // import st from "./style.module.css";                        // style shett import
 import { DOMAIN } from "./config";                          // api link import in congig file
