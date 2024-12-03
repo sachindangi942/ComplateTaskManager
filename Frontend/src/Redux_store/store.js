@@ -19,7 +19,9 @@ const persistConfig ={
 const persistedReducer =  persistReducer(persistConfig , rootReducer)
 
 
-const redux_store = configureStore({reducer:persistedReducer});
+const redux_store = configureStore({
+    reducer:persistedReducer
+});
 
 
 export default redux_store  ;

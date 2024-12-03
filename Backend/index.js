@@ -8,7 +8,7 @@ require("dotenv").config();
 // Allow requests from localhost:3000
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3002",
     credentials: true, // if you need to send cookies or authentication headers
   })
 );
