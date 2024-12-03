@@ -5,11 +5,15 @@ import { LoginVlidation } from "./Validation/LoginVlidation";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { DOMAIN } from "./config";
+import { useDispatch } from "react-redux";
+import { AfterLogin } from "../Redux_store/AfterLogin";
 
 
 
 const MyLogin = (props) => {
+    const dispatch = useDispatch()
     const navigate = useNavigate()
+
     const [request ,setRequest] = useState({});
     const [response, setResponse] = useState()
     const manage_request = (obj) => {
@@ -31,14 +35,18 @@ const MyLogin = (props) => {
            if(data?.token){
                 let token = data.token ;
                 token = JSON.stringify(token);
-                localStorage.setItem("token" , token)
-                if(data.data.role==="admin")return navigate("/dashboard")
-                if(data.data.role==="user")return navigate("/usertask")
+                localStorage.setItem("token" , token);
+                
+                data.data.role === "user" ?  dispatch(AfterLogin({Role :"user"})) : navigate("/login")
+                data.data.role === "admin" ?  dispatch(AfterLogin({Role :"admin"})): navigate("/login")
+                 if(data.data.role==="admin"){ return navigate("/Admin_dashboard")}
+                if(data.data.role==="user"){return navigate("/usertask")}
            }
 
             
         } catch (error) {
-            setResponse(error.response.data);
+            setResponse(error?.response?.data);
+            console.log(error)
             // console.log(error.response.data)
         }
     };

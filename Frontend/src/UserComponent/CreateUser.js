@@ -12,7 +12,7 @@ import { DOMAIN } from "./config";                          // api link import i
 import { useNavigate } from "react-router-dom";             // use navigate for callng routing aumatic
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Container, Row } from "react-bootstrap";
-import Header from "../GlobalComponent/Header";
+
 
 
 const CreateUser = (props) => {
@@ -86,7 +86,7 @@ const CreateUser = (props) => {
    
 
     return (<>
-            <Header />
+           
 
         <Container className="mt-5">
             <Row className="justify-content-center">

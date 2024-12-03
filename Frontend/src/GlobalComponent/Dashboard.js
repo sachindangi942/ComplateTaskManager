@@ -1,10 +1,13 @@
 import React from "react";
+
 import { Link, useNavigate } from "react-router-dom";
 
-const Dashboard = () => {
-    const navigate = useNavigate();
+const Admin_Dashboard = () => {
+    // const navigate = useNavigate();
+   
 
     return (
+       <>
         <div className="container mt-5">
             <div className="row">
                 {/* Create User Card */}
@@ -15,8 +18,8 @@ const Dashboard = () => {
                             <p className="card-text">
                                 Add a new user.
                             </p>
-                            <Link                                 className="btn btn-primary" 
- to="/createuser" >                                Go to Create User
+                            <Link className="btn btn-primary"
+                                to="/createuser" > Go to Create User
 
                             </Link>
                         </div>
@@ -31,12 +34,12 @@ const Dashboard = () => {
                             <p className="card-text">
                                 Create a task for users
                             </p>
-                            <button 
-                                className="btn btn-success" 
-                                onClick={() => navigate("/task")}
-                            >
-                                Go to Create Task
-                            </button>
+                          
+
+                            <Link className="btn btn-primary"
+                                to="/task" > Go to Create Task
+
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -49,18 +52,17 @@ const Dashboard = () => {
                             <p className="card-text">
                                 See the list of all tasks.
                             </p>
-                            <button 
-                                className="btn btn-info" 
-                                onClick={() => navigate("/list")}
-                            >
-                                Go to View Tasks
-                            </button>
+                           
+                            <Link className="btn btn-primary"
+                                to="/list" > Go to View Task list
+
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div></>
     );
 };
 
-export default Dashboard;
+export default Admin_Dashboard;
